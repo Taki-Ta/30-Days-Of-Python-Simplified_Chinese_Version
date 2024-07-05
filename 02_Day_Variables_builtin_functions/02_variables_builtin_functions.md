@@ -27,9 +27,9 @@ _阅读大约需要：12m_
   - [数据类型](#数据类型)
   - [数据类型转换](#数据类型转换)
   - [Numbers](#numbers)
-  - [💻 Exercises - Day 2](#-exercises---day-2)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
+  - [💻 练习 - 第二天](#-练习---第二天)
+    - [练习： 1级](#练习-1级)
+    - [练习： 2级](#练习-2级)
 
 # 📘 第二天
 
@@ -99,7 +99,7 @@ num-1
 
 当我们将某种数据类型分配给变量时，这称为变量声明。例如，在下面的例子中，我的名字被分配给变量 first_name。等号是赋值运算符。赋值意味着将数据存储在变量中。Python 中的等号与数学中的等号不同。
 
-_示例:_
+_示例：_
 
 ```py
 # Python 中的变量
@@ -120,7 +120,7 @@ person_info = {
 
 让我们使用 _print()_ 和 _len()_ 内置函数。打印函数可以接受无限数量的参数。参数是一个值，我们可以将其传递或放在函数括号内，请参见下面的示例。
 
-**示例:**
+**示例：**
 
 ```py
 print('Hello, World!') # The text Hello, World! is an argument
@@ -131,7 +131,7 @@ print(len('Hello, World!')) # it takes only one argument
 让我们打印并算出在上面声明的变量的长度：
 
 
-**示例:**
+**示例：**
 
 ```py
 # 打印变量的值
@@ -152,7 +152,7 @@ print('Person information: ', person_info)
 
 多个变量也可以在同一行中声明：
 
-**示例:**
+**示例：**
 
 ```py
 first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
@@ -167,7 +167,7 @@ print('Married: ', is_married)
 
 使用内置函数 _input()_ 获取用户输入。让我们从用户那里得到的数据并赋值给 first_name 和 age 变量。
 .
-**示例:**
+**示例：**
 
 ```py
 first_name = input('What is your name: ')
@@ -185,7 +185,7 @@ Python 中有多种数据类型。为了识别数据类型，我们使用 _type_
 
 - 检查数据类型：为了检查某些数据/变量的数据类型，我们使用 _type_ 函数
 
-  **示例:**
+  **示例：**
 
 ```py
 # python 中不同的数据类型
@@ -214,7 +214,7 @@ print(type(zip([1,2],[3,4])))                                   # set
 当我们进行算术运算时，字符串数字应首先转换为 int 或 float，否则将返回错误。如果我们将数字与字符串连接起来，则应首先将数字转换为字符串。我们将在字符串部分讨论连接。
 
 
-  **示例:**
+  **示例：**
 
 ```py
 # 整型 到 浮点型
@@ -249,13 +249,13 @@ print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 
 Python 中不同的数字类型
 
-- Integer: 整型数字(负数, 0 以及 正数)
-    示例:
+- Integer：整型数字(负数, 0 以及 正数)
+    示例：
     ... -3, -2, -1, 0, 1, 2, 3 ...
-- Float: 浮点数
+- Float：浮点数
     示例
     ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
-- Complex: 复数
+- Complex：复数
     示例
     1 + j, 2 + 4j, 1 - 1j
 
@@ -264,10 +264,10 @@ Python 中不同的数字类型
 
 ## 💻 练习 - 第二天
 
-### 练习: 1级
+### 练习： 1级
 
 1. 在 30DaysOfPython 文件夹内创建一个 day_2 文件夹。在这个文件夹里创建一个 variables.py 文件
-2. 输入注释 '第二天: 30 Days of python programming'
+2. 输入注释 '第二天： 30 Days of python programming'
 3. 声明一个 first name 变量，并为它赋值
 4. 声明一个 last name 变量，并为它赋值
 5. 声明一个 full name 变量，并为它赋值
@@ -280,7 +280,7 @@ Python 中不同的数字类型
 12. 声明一个 is_light_on 变量，并为它赋值
 13. 在一行中声明多个变量
 
-### 练习: 2级
+### 练习： 2级
 
 1. 使用 _type()_ 内置函数检查你声明变量的数据类型
 1. 使用 _len()_ 内置函数，算出你 first name 变量的长度

@@ -51,7 +51,7 @@
 </div>
 
 <div align="center">
-  <h1> 30 Days Of Python: 第一天 - 介绍</h1>
+  <h1> 30 Days Of Python：第一天 - 介绍</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -96,9 +96,9 @@ _阅读大约需要：21m_
     - [检查数据类型](#检查数据类型)
     - [Python 文件](#python-文件)
   - [💻 练习 - 第一天](#-练习---第一天)
-    - [练习: 1级](#练习-1级)
-    - [练习: 2级](#练习-2级)
-    - [练习: 3级](#练习-3级)
+    - [练习： 1级](#练习-1级)
+    - [练习： 2级](#练习-2级)
+    - [练习： 3级](#练习-3级)
 
 # 📘 第一天
 
@@ -272,7 +272,7 @@ _缩进_ 就是文本中的空格。在许多编程语言中，_缩进_ 常用�
 
 注释对于使代码更易读和在代码中留下备注非常重要。Python 不会运行注释部分。在 Python 中，任何以 # 开头的文本都是注释。
 
-**示例: 单行注释**
+**示例： 单行注释**
 
 ```shell
     # 第一行注释
@@ -280,7 +280,7 @@ _缩进_ 就是文本中的空格。在许多编程语言中，_缩进_ 常用�
     # Python 正在吞噬这个世界
 ```
 
-**示例: 多行注释**
+**示例： 多行注释**
 
 如果没有赋值给变量，三个引号可以用于多行注释。
 
@@ -298,13 +298,13 @@ Python 正在吞噬这个世界
 
 #### Number
 
-- Integer: 整型数字(负数， 0 以及 正数)
-    示例:
+- Integer： 整型数字(负数， 0 以及 正数)
+    示例：
     ... -3, -2, -1, 0, 1, 2, 3 ...
-- Float: 浮点数
+- Float： 浮点数
     示例
     ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
-- Complex: 复数
+- Complex： 复数
     示例
     1 + j, 2 + 4j
 
@@ -313,7 +313,7 @@ Python 正在吞噬这个世界
  字符串是一个或多个字符的集合，用单引号或双引号括起来。如果字符串有多行，需要使用三引号。
 A collection of one or more characters under a single or double quote. If a string is more than one sentence then we use a triple quote.
 
-**示例:**
+**示例：**
 
 ```py
 'Asabeneh'
@@ -327,7 +327,7 @@ A collection of one or more characters under a single or double quote. If a stri
 
 布尔数据类型是 True 或 False 值。T 和 F 应该始终大写。
 
-**示例:**
+**示例：**
 
 ```python
     True  #  灯开着吗? 如果开着，值应该是 True
@@ -338,7 +338,7 @@ A collection of one or more characters under a single or double quote. If a stri
 
 Python 列表是一个有序的集合，允许存储不同数据类型的项。列表类似于 JavaScript 中的数组。
 
-**示例:**
+**示例：**
 
 ```py
 [0, 1, 2, 3, 4, 5]  # 所有元素都是相同的类型 - 一个数组列表
@@ -351,7 +351,7 @@ Python 列表是一个有序的集合，允许存储不同数据类型的项。�
 
 Python 字典对象是一个无序的数据集合，以键值对的形式存储数据。
 
-**示例:**
+**示例：**
 
 ```py
 {
@@ -368,7 +368,7 @@ Python 字典对象是一个无序的数据集合，以键值对的形式存储�
 
 元组是一个有序的不同数据类型的集合，类似于列表，但元组一旦创建就不能修改。它们是不可变的。
 
-**示例:**
+**示例：**
 
 ```py
 ('Asabeneh', 'Pawel', 'Brook', 'Abraham', 'Lidiya') # 姓名
@@ -386,7 +386,7 @@ Python 字典对象是一个无序的数据集合，以键值对的形式存储�
 在之后的章节中，我们会详细了解 Python 中的每个数据类型。
 
 
-**示例:**
+**示例：**
 
 ```py
 {2, 4, 3, 5}
@@ -395,7 +395,7 @@ Python 字典对象是一个无序的数据集合，以键值对的形式存储�
 
 ### 检查数据类型
 
-为了检查某些数据/变量的数据类型，我们使用 **type** 函数。在下面的终端中，你将看到不同的 python 数据类型:
+为了检查某些数据/变量的数据类型，我们使用 **type** 函数。在下面的终端中，你将看到不同的 python 数据类型：
 
 ![Checking Data types](./images/checking_data_types.png)
 
@@ -406,7 +406,7 @@ Python 字典对象是一个无序的数据集合，以键值对的形式存储�
 在 Python 交互式 shell 上，不使用 **print** 也可以打印，但在 Visual Studio Code 上，为了看到我们的结果，我们应该使用内置函数 _print()_。_print()_ 内置函数接受一个或多个参数，如下所示 _print('arument1','argument2','argument3')_。下面是使用示例。
 
 
-**示例:**
+**示例：**
 
 文件名为 helloworld.py
 
@@ -441,7 +441,7 @@ print(type((9.8, 3.14, 2.7)))    # 元组
 
 ## 💻 练习 - 第一天
 
-### 练习: 1级
+### 练习： 1级
 
 1. 检查你正在使用的 Python 版本。
 2. 打开 python 交互式 shell ，执行以下操作。重复3、4遍。
@@ -452,12 +452,12 @@ print(type((9.8, 3.14, 2.7)))    # 元组
    - 除法(/)
    - 指数运算(\*\*)
    - Floor 除法(//)
-3. 在 python 交互式 shell 中输入以下字符串:
+3. 在 python 交互式 shell 中输入以下字符串：
    - 你的名字
    - 你的姓氏
    - 你的国籍
    - 我正在享受 30 days of python 课程
-4. 检查下列数据的数据类型:
+4. 检查下列数据的数据类型：
    - 10
    - 9.8
    - 3.14
@@ -467,11 +467,11 @@ print(type((9.8, 3.14, 2.7)))    # 元组
    - 你的姓氏
    - 你的国籍
 
-### 练习: 2级
+### 练习： 2级
 
 1. 在 30DaysOfPython 文件夹内创建一个名为 day_1 的文件夹。在 day_1 文件夹内创建一个名为 helloworld.py 的 python 文件，并重复问题 1、2、3、4。记得在 python 文件中使用 _print()_。导航到你保存文件的目录，并运行它。
 
-### 练习: 3级
+### 练习： 3级
 
 
 1. 为不同的 Python 数据类型编写一个示例，例如 Number(Integer， Float， Complex)， String， Boolean， List， Tuple， Set and Dictionary.
