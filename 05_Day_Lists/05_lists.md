@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of Python: Day 5 - Lists</h1>
+  <h1> 30 Days Of Python: 第五天 - Lists</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -14,77 +14,77 @@
 
 </div>
 
-[<< Day 4](../04_Day_Strings/04_strings.md) | [Day 6 >>](../06_Day_Tuples/06_tuples.md)
+[<< 第四天](../04_Day_Strings/04_strings.md) | [第六天 >>](../06_Day_Tuples/06_tuples.md)
 
 ![30DaysOfPython](../images/30DaysOfPython_banner3@2x.png)
 
-- [Day 5](#day-5)
-  - [Lists](#lists)
-    - [How to Create a List](#how-to-create-a-list)
-    - [Accessing List Items Using Positive Indexing](#accessing-list-items-using-positive-indexing)
-    - [Accessing List Items Using Negative Indexing](#accessing-list-items-using-negative-indexing)
-    - [Unpacking List Items](#unpacking-list-items)
-    - [Slicing Items from a List](#slicing-items-from-a-list)
-    - [Modifying Lists](#modifying-lists)
-    - [Checking Items in a List](#checking-items-in-a-list)
-    - [Adding Items to a List](#adding-items-to-a-list)
-    - [Inserting Items into a List](#inserting-items-into-a-list)
-    - [Removing Items from a List](#removing-items-from-a-list)
-    - [Removing Items Using Pop](#removing-items-using-pop)
-    - [Removing Items Using Del](#removing-items-using-del)
-    - [Clearing List Items](#clearing-list-items)
-    - [Copying a List](#copying-a-list)
-    - [Joining Lists](#joining-lists)
-    - [Counting Items in a List](#counting-items-in-a-list)
-    - [Finding Index of an Item](#finding-index-of-an-item)
-    - [Reversing a List](#reversing-a-list)
-    - [Sorting List Items](#sorting-list-items)
-  - [💻 Exercises: Day 5](#-exercises-day-5)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
+- [第五天](#第五天)
+  - [列表](#列表)
+    - [如何创建列表](#如何创建列表)
+    - [使用正索引访问列表项](#使用正索引访问列表项)
+    - [使用负索引访问列表项](#使用负索引访问列表项)
+    - [拆解列表项](#拆解列表项)
+    - [列表切分](#列表切分)
+    - [修改列表](#修改列表)
+    - [检索列表项](#检索列表项)
+    - [添加列表项](#添加列表项)
+    - [插入列表项](#插入列表项)
+    - [移除列表项](#移除列表项)
+    - [使用 Pop 删除列表项](#使用-pop-删除列表项)
+    - [使用 Del 删除列表项](#使用-del-删除列表项)
+    - [清空列表项](#清空列表项)
+    - [列表复制](#列表复制)
+    - [连接列表](#连接列表)
+    - [统计列表项](#统计列表项)
+    - [查找项的索引](#查找项的索引)
+    - [列表反转](#列表反转)
+    - [列表排序](#列表排序)
+  - [💻 练习 - 第五天](#-练习---第五天)
+    - [练习： 1级](#练习-1级)
+    - [练习： 2级](#练习-2级)
 
-# Day 5
+# 第五天
 
-## Lists
+## 列表
 
-There are four collection data types in Python :
+Python 中有四种集合数据类型：
 
-- List: is a collection which is ordered and changeable(modifiable). Allows duplicate members.
-- Tuple: is a collection which is ordered and unchangeable or unmodifiable(immutable). Allows duplicate members.
-- Set: is a collection which is unordered, un-indexed and unmodifiable, but we can add new items to the set. Duplicate members are not allowed.
-- Dictionary: is a collection which is unordered, changeable(modifiable) and indexed. No duplicate members.
+- List：有序且可变的集合。允许重复的成员。
+- Tuple：有序且不可变的集合。允许重复的成员。
+- Set：无序、不可索引且不可变的集合，但我们可以向集合中添加新项。不允许重复的成员。
+- Dictionary：无序、可变且可索引的集合。不允许重复的成员。
 
-A list is collection of different data types which is ordered and modifiable(mutable). A list can be empty or it may have different data type items.
 
-### How to Create a List
+列表是不同数据类型的集合，有序且可修改（可变）。列表可以为空，也可以包含不同数据类型的项。
 
-In Python we can create lists in two ways:
+### 如何创建列表
 
-- Using list built-in function
+在 Python 中，我们可以通过两种方式创建列表：
+
+- 使用内置函数 list()
 
 ```py
-# syntax
+# 语法
 lst = list()
 ```
 
 ```py
-empty_list = list() # this is an empty list, no item in the list
+empty_list = list() # 这是一个空列表
 print(len(empty_list)) # 0
 ```
-
-- Using square brackets, []
+- 使用方括号，[]
 
 ```py
-# syntax
+# 语法
 lst = []
 ```
 
 ```py
-empty_list = [] # this is an empty list, no item in the list
+empty_list = [] # 这是一个空列表
 print(len(empty_list)) # 0
 ```
 
-Lists with initial values. We use _len()_ to find the length of a list.
+具有初始值的列表。我们使用 _len()_ 来检查列表的长度。
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
@@ -93,7 +93,7 @@ animal_products = ['milk', 'meat', 'butter', 'yoghurt']             # list of an
 web_techs = ['HTML', 'CSS', 'JS', 'React','Redux', 'Node', 'MongDB'] # list of web technologies
 countries = ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 
-# Print the lists and its length
+# 打印列表及其长度
 print('Fruits:', fruits)
 print('Number of fruits:', len(fruits))
 print('Vegetables:', vegetables)
@@ -107,7 +107,7 @@ print('Number of countries:', len(countries))
 ```
 
 ```sh
-output
+输出
 Fruits: ['banana', 'orange', 'mango', 'lemon']
 Number of fruits: 4
 Vegetables: ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
@@ -120,20 +120,22 @@ Countries: ['Finland', 'Estonia', 'Denmark', 'Sweden', 'Norway']
 Number of countries: 5
 ```
 
-- Lists can have items of different data types
+- 列表可以包含不同数据类型的项
 
 ```py
- lst = ['Asabeneh', 250, True, {'country':'Finland', 'city':'Helsinki'}] # list containing different data types
+ lst = ['Asabeneh', 250, True, {'country':'Finland', 'city':'Helsinki'}] # 包含不同数据类型的列表
 ```
 
-### Accessing List Items Using Positive Indexing
 
-We access each item in a list using their index. A list index starts from 0. The picture below shows clearly where the index starts
+### 使用正索引访问列表项
+
+我们使用索引访问列表中的每个项。列表索引从 0 开始。下图清楚地显示了索引从哪里开始。
+
 ![List index](../images/list_index.png)
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
-first_fruit = fruits[0] # we are accessing the first item using its index
+first_fruit = fruits[0] # 我们正在使用其索引访问第一项
 print(first_fruit)      # banana
 second_fruit = fruits[1]
 print(second_fruit)     # orange
@@ -144,9 +146,9 @@ last_index = len(fruits) - 1
 last_fruit = fruits[last_index]
 ```
 
-### Accessing List Items Using Negative Indexing
+### 使用负索引访问列表项
 
-Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item.
+负索引意味着从末尾开始，-1 指的是最后一项，-2 指的是倒数第二项。
 
 ![List negative indexing](../images/list_negative_indexing.png)
 
@@ -160,7 +162,7 @@ print(last_fruit)       # lemon
 print(second_last)      # mango
 ```
 
-### Unpacking List Items
+### 拆解列表项
 
 ```py
 lst = ['item1','item2','item3', 'item4', 'item5']
@@ -173,21 +175,21 @@ print(rest)           # ['item4', 'item5']
 ```
 
 ```py
-# First Example
+# 示例一
 fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
 first_fruit, second_fruit, third_fruit, *rest = fruits 
 print(first_fruit)     # banana
 print(second_fruit)    # orange
 print(third_fruit)     # mango
 print(rest)           # ['lemon','lime','apple']
-# Second Example about unpacking list
+# 示例二
 first, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
 print(first)          # 1
 print(second)         # 2
 print(third)          # 3
 print(rest)           # [4,5,6,7,8,9]
 print(tenth)          # 10
-# Third Example about unpacking list
+# 示例三
 countries = ['Germany', 'France','Belgium','Sweden','Denmark','Finland','Norway','Iceland','Estonia']
 gr, fr, bg, sw, *scandic, es = countries
 print(gr)
@@ -198,33 +200,34 @@ print(scandic)
 print(es)
 ```
 
-### Slicing Items from a List
+### 列表切分
 
-- Positive Indexing: We can specify a range of positive indexes by specifying the start, end and step, the return value will be a new list. (default values for start = 0, end = len(lst) - 1 (last item), step = 1)
+- 正索引：我们可以通过指定开始、结束和步长来指定一系列正索引，返回值将是一个新列表。 （开始默认值为 0，结束默认值为 len(lst) - 1（最后一项），步长默认值为 1）
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[0:4] # it returns all the fruits
-# this will also give the same result as the one above
-all_fruits = fruits[0:] # if we don't set where to stop it takes all the rest
-orange_and_mango = fruits[1:3] # it does not include the first index
+all_fruits = fruits[0:4] # 返回所有项
+#与上面返回值相同
+all_fruits = fruits[0:] # 如果不指定结束索引，将返回从开始到最后一项的所有项
+orange_and_mango = fruits[1:3] # 不包含第一项
 orange_mango_lemon = fruits[1:]
-orange_and_lemon = fruits[::2] # here we used a 3rd argument, step. It will take every 2cnd item - ['banana', 'mango']
+orange_and_lemon = fruits[::2] # 我们使用了第三个参数，步长。 每两项取一条 - ['banana', 'mango']
 ```
 
-- Negative Indexing: We can specify a range of negative indexes by specifying the start, end and step, the return value will be a new list.
+- 负索引：我们可以通过指定开始、结束和步长来指定一系列负索引，返回值将是一个新列表。
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[-4:] # it returns all the fruits
-orange_and_mango = fruits[-3:-1] # it does not include the last index,['orange', 'mango']
-orange_mango_lemon = fruits[-3:] # this will give starting from -3 to the end,['orange', 'mango', 'lemon']
-reverse_fruits = fruits[::-1] # a negative step will take the list in reverse order,['lemon', 'mango', 'orange', 'banana']
+all_fruits = fruits[-4:] # 返回所有项
+orange_and_mango = fruits[-3:-1] # 不包含最后一项，['orange', 'mango']
+orange_mango_lemon = fruits[-3:] # 返回从-3到末尾的项，['orange', 'mango', 'lemon']
+reverse_fruits = fruits[::-1] # 负步长将按相反顺序排列列表,['lemon', 'mango', 'orange', 'banana']
 ```
 
-### Modifying Lists
+### 修改列表
 
-List is a mutable or modifiable ordered collection of items. Lets modify the fruit list.
+列表是一个可变或可修改的有序集合。下面我们修改 fruit 列表。
+
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -237,9 +240,9 @@ fruits[last_index] = 'lime'
 print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
 ```
 
-### Checking Items in a List
+### 检索列表项
 
-Checking an item if it is a member of a list using *in* operator. See the example below.
+使用 *in* 运算符检查列表项是否为列表的成员。请参阅下面的示例。
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -249,12 +252,12 @@ does_exist = 'lime' in fruits
 print(does_exist)  # False
 ```
 
-### Adding Items to a List
+### 添加列表项
 
-To add item to the end of an existing list we use the method *append()*.
+要将项添加到现有列表的末尾，我们使用 *append()* 方法。
 
 ```py
-# syntax
+# 语法
 lst = list()
 lst.append(item)
 ```
@@ -267,30 +270,31 @@ fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime'
 print(fruits)
 ```
 
-### Inserting Items into a List
+### 插入列表项
 
-We can use *insert()* method to insert a single item at a specified index in a list. Note that other items are shifted to the right. The *insert()* methods takes two arguments:index and an item to insert.
+我们可以使用 *insert()* 方法在列表中的指定索引处插入单个项。请注意，其他项将向右移动。*insert()* 方法接受两个参数：索引和要插入的项。
+
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.insert(index, item)
 ```
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.insert(2, 'apple') # insert apple between orange and mango
+fruits.insert(2, 'apple') # 在 orange 。 mango 中插入 apple
 print(fruits)           # ['banana', 'orange', 'apple', 'mango', 'lemon']
 fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'lime', 'mango', 'lemon']
 print(fruits)
 ```
 
-### Removing Items from a List
+### 移除列表项
 
-The remove method removes a specified item from a list
+- 使用 *remove()* 方法从列表中删除指定的项
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.remove(item)
 ```
@@ -298,19 +302,19 @@ lst.remove(item)
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon', 'banana']
 fruits.remove('banana')
-print(fruits)  # ['orange', 'mango', 'lemon', 'banana'] - this method removes the first occurrence of the item in the list
+print(fruits)  # ['orange', 'mango', 'lemon', 'banana'] - 此方法删除列表中第一次出现的项
 fruits.remove('lemon')
 print(fruits)  # ['orange', 'mango', 'banana']
 ```
 
-### Removing Items Using Pop
+### 使用 Pop 删除列表项
 
-The *pop()* method removes the specified index, (or the last item if index is not specified):
+使用 *pop()* 方法删除指定索引（如果未指定索引，则删除最后一项）：
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
-lst.pop()       # last item
+lst.pop()       # 最后一项
 lst.pop(index)
 ```
 
@@ -323,15 +327,16 @@ fruits.pop(0)
 print(fruits)       # ['orange', 'mango']
 ```
 
-### Removing Items Using Del
+### 使用 Del 删除列表项
 
-The *del* keyword removes the specified index and it can also be used to delete items within index range. It can also delete the list completely
+使用 *del* 关键字删除指定索引，也可以用于删除索引范围内的项。它还可以完全删除列表
+
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
-del lst[index] # only a single item
-del lst        # to delete the list completely
+del lst[index] # 只删除一项
+del lst        # 删除整个列表
 ```
 
 ```py
@@ -340,18 +345,18 @@ del fruits[0]
 print(fruits)       # ['orange', 'mango', 'lemon', 'kiwi', 'lime']
 del fruits[1]
 print(fruits)       # ['orange', 'lemon', 'kiwi', 'lime']
-del fruits[1:3]     # this deletes items between given indexes, so it does not delete the item with index 3!
+del fruits[1:3]     # 这将删除给定索引之间的项，因此不会删除索引为 3 的项!
 print(fruits)       # ['orange', 'lime']
 del fruits
-print(fruits)       # This should give: NameError: name 'fruits' is not defined
+print(fruits)       # 这里会提示: NameError: name 'fruits' is not defined
 ```
 
-### Clearing List Items
+### 清空列表项
 
-The *clear()* method empties the list:
+使用 *clear()* 方法清空列表：
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.clear()
 ```
@@ -362,12 +367,12 @@ fruits.clear()
 print(fruits)       # []
 ```
 
-### Copying a List
+### 列表复制
 
-It is possible to copy a list by reassigning it to a new variable in the following way: list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also modify the original, list1. But there are lots of case in which we do not like to modify the original instead we like to have a different copy. One of way of avoiding the problem above is using _copy()_.
+可以通过将其重新分配给新变量来复制列表: list2 = list1。现在，list2 是 list1 的引用，我们对 list2 进行的任何更改也将修改原始的 list1。但是有很多时候我们不想修改原始的列表，而是想要一个不同的副本。为了避免这个问题，我们使用 *copy()*。
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst_copy = lst.copy()
 ```
@@ -378,14 +383,14 @@ fruits_copy = fruits.copy()
 print(fruits_copy)       # ['banana', 'orange', 'mango', 'lemon']
 ```
 
-### Joining Lists
+### 连接列表
 
-There are several ways to join, or concatenate, two or more lists in Python.
+有几种方法可以连接或连接两个或多个列表。
 
-- Plus Operator (+)
+- 加号 (+)
 
 ```py
-# syntax
+# 语法
 list3 = list1 + list2
 ```
 
@@ -401,11 +406,11 @@ fruits_and_vegetables = fruits + vegetables
 print(fruits_and_vegetables ) # ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 ```
 
-- Joining using extend() method
-  The *extend()* method allows to append list in a list. See the example below.
+- 使用 *extend()* 方法
+*extend()* 方法可以将列表附加到列表中。请参阅下面的示例。
 
 ```py
-# syntax
+# 语法
 list1 = ['item1', 'item2']
 list2 = ['item3', 'item4', 'item5']
 list1.extend(list2)
@@ -429,12 +434,13 @@ fruits.extend(vegetables)
 print('Fruits and vegetables:', fruits ) # Fruits and vegetables: ['banana', 'orange', 'mango', 'lemon', 'Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
 ```
 
-### Counting Items in a List
+### 统计列表项
 
-The *count()* method returns the number of times an item appears in a list:
+使用 *count()* 方法返回列表中指定项出现的次数:
+
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.count(item)
 ```
@@ -446,12 +452,12 @@ ages = [22, 19, 24, 25, 26, 24, 25, 24]
 print(ages.count(24))           # 3
 ```
 
-### Finding Index of an Item
+### 查找项的索引
 
-The *index()* method returns the index of an item in the list:
+*index()* 方法返回列表中项的索引:
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.index(item)
 ```
@@ -460,15 +466,15 @@ lst.index(item)
 fruits = ['banana', 'orange', 'mango', 'lemon']
 print(fruits.index('orange'))   # 1
 ages = [22, 19, 24, 25, 26, 24, 25, 24]
-print(ages.index(24))           # 2, the first occurrence
+print(ages.index(24))           # 2， 第一次出现
 ```
 
-### Reversing a List
+### 列表反转
 
-The *reverse()* method reverses the order of a list.
+使用 *reverse()* 方法反转列表的顺序。
 
 ```py
-# syntax
+# 语法
 lst = ['item1', 'item2']
 lst.reverse()
 
@@ -483,25 +489,25 @@ ages.reverse()
 print(ages) # [24, 25, 24, 26, 25, 24, 19, 22]
 ```
 
-### Sorting List Items
+### 列表排序
 
-To sort lists we can use _sort()_ method or _sorted()_ built-in functions. The _sort()_ method reorders the list items in ascending order and modifies the original list. If an argument of _sort()_ method reverse is equal to true, it will arrange the list in descending order.
+要对列表进行排序，我们可以使用 *sort()* 方法或内置函数 *sorted()*。*sort()* 方法将列表项按升序重新排序并修改原始列表。如果 *sort()* 方法的 reverse 参数为 true，则会按降序排列列表。
 
-- sort(): this method modifies the original list
+- sort(): 这个方法会修改原始列表
 
   ```py
-  # syntax
+  # 语法
   lst = ['item1', 'item2']
   lst.sort()                # ascending
   lst.sort(reverse=True)    # descending
   ```
 
-  **Example:**
+  **示例：**
 
   ```py
   fruits = ['banana', 'orange', 'mango', 'lemon']
   fruits.sort()
-  print(fruits)             # sorted in alphabetical order, ['banana', 'lemon', 'mango', 'orange']
+  print(fruits)             # 按字母排序， ['banana', 'lemon', 'mango', 'orange']
   fruits.sort(reverse=True)
   print(fruits) # ['orange', 'mango', 'lemon', 'banana']
   ages = [22, 19, 24, 25, 26, 24, 25, 24]
@@ -512,8 +518,9 @@ To sort lists we can use _sort()_ method or _sorted()_ built-in functions. The _
   print(ages) #  [26, 25, 25, 24, 24, 24, 22, 19]
   ```
 
-  sorted(): returns the ordered list without modifying the original list
-  **Example:**
+  sorted(): 不会修改原始列表，而是返回一个新列表
+
+  **示例:**
 
   ```py
   fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -524,65 +531,66 @@ To sort lists we can use _sort()_ method or _sorted()_ built-in functions. The _
   print(fruits)     # ['orange', 'mango', 'lemon', 'banana']
   ```
 
-🌕 You are diligent and you have already achieved quite a lot. You have just completed day 5 challenges and you are 5 steps a head in to your way to greatness. Now do some exercises for your brain and muscles.
 
-## 💻 Exercises: Day 5
 
-### Exercises: Level 1
+🌕 你很勤奋，已经取得了很多成就。你刚刚完成了第 5 天的挑战，并且已经朝着伟大的目标迈出了 5 步。现在做些锻炼大脑和肌肉的练习吧。
 
-1. Declare an empty list
-2. Declare a list with more than 5 items
-3. Find the length of your list
-4. Get the first item, the middle item and the last item of the list
-5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon.
-7. Print the list using _print()_
-8. Print the number of companies in the list
-9. Print the first, middle and last company
-10. Print the list after modifying one of the companies
-11. Add an IT company to it_companies
-12. Insert an IT company in the middle of the companies list
-13. Change one of the it_companies names to uppercase (IBM excluded!)
-14. Join the it_companies with a string '#;&nbsp; '
-15. Check if a certain company exists in the it_companies list.
-16. Sort the list using sort() method
-17. Reverse the list in descending order using reverse() method
-18. Slice out the first 3 companies from the list
-19. Slice out the last 3 companies from the list
-20. Slice out the middle IT company or companies from the list
-21. Remove the first IT company from the list
-22. Remove the middle IT company or companies from the list
-23. Remove the last IT company from the list
-24. Remove all IT companies from the list
-25. Destroy the IT companies list
-26. Join the following lists:
+## 💻 练习 - 第五天
+
+### 练习： 1级
+
+1. 声明一个空列表
+2. 声明一个包含 5 个以上项的列表
+3. 查找列表的长度
+4. 获取列表的第一项、中间项和最后一项
+5. 声明一个名为 mixed_data_types 的列表，包含你的姓名、年龄、身高、婚姻状况和地址
+6. 声明一个名为 it_companies 的列表，并分配初始值 Facebook、Google、Microsoft、Apple、IBM、Oracle 和 Amazon。
+7. 使用 _print()_ 打印列表
+8. 打印列表中的公司数
+9. 打印第一、中间和最后一家公司
+10. 修改其中一家公司的名称后打印列表
+11. 向 it_companies 添加一家 IT 公司
+12. 在公司列表中间插入一家 IT 公司
+13. 将其中一家 it_companies 公司的名称更改为大写（不包括 IBM!）
+14. 使用字符串 '#;&nbsp; ' 连接 it_companies
+15. 检查 it_companies 列表中是否存在某个公司。
+16. 使用 sort() 方法对列表进行排序
+17. 使用 reverse() 方法按降序反转列表
+18. 从列表中切分出前 3 家公司
+19. 从列表中切分出最后 3 家公司
+20. 从列表中切分出中间的 IT 公司或公司
+21. 从列表中删除第一家 IT 公司
+22. 从列表中删除中间的 IT 公司或公司
+23. 从列表中删除最后一家 IT 公司
+24. 从列表中删除所有 IT 公司
+25. 销毁 it_companies 列表
+26. 连接以下列表：
 
     ```py
     front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
     back_end = ['Node','Express', 'MongoDB']
     ```
+27. 在连接的列表中插入 Python 和 SQL 到变量 full_stack 之后。
 
-27. After joining the lists in question 26. Copy the joined list and assign it to a variable full_stack. Then insert Python and SQL after Redux.
+### 练习： 2级
 
-### Exercises: Level 2
-
-1. The following is a list of 10 students ages:
+1. 以下是 10 个学生的年龄列表：
 
 ```sh
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 ```
 
-- Sort the list and find the min and max age
-- Add the min age and the max age again to the list
-- Find the median age (one middle item or two middle items divided by two)
-- Find the average age (sum of all items divided by their number )
-- Find the range of the ages (max minus min)
-- Compare the value of (min - average) and (max - average), use _abs()_ method
+- 对列表进行排序，并找出最大和最小年龄
+- 将最小年龄和最大年龄再次添加到列表中
+- 找到年龄中位数（一个中间项或两个中间项除以二）
+- 找到平均年龄（所有项的总和除以它们的数量）
+- 找到年龄范围（最大减去最小）
+- 比较 (min - average) 和 (max - average) 的值，使用 _abs()_ 方法
 
-1. Find the middle country(ies) in the [countries list](https://github.com/Asabeneh/30-Days-Of-Python/tree/master/data/countries.py)
-1. Divide the countries list into two equal lists if it is even if not one more country for the first half.
-1. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
+1. 在 [国家列表](https://github.com/Taki-Ta/30-Days-Of-Python-Simplified_Chinese_Version/tree/master/data/countries.py) 中查找中间的国家
+2. 将国家列表分成两个相等的列表（如果是偶数，如果不是，则第一个半多一个国家）
+3. ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']。拆解前三个国家和剩下的北欧国家。
 
-🎉 CONGRATULATIONS ! 🎉
+🎉 恭喜 ! 🎉
 
-[<< Day 4](../04_Day_Strings/04_strings.md) | [Day 6 >>](../06_Day_Tuples/06_tuples.md)
+[<< 第四天](../04_Day_Strings/04_strings.md) | [第六天 >>](../06_Day_Tuples/06_tuples.md)
